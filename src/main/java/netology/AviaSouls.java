@@ -64,10 +64,11 @@ public class AviaSouls {
             if (ticket.getFrom().equals(from)) { // совпадает аэропорт вылета
                 if (ticket.getTo().equals(to)) { // совпадает аэропорт прилёта
                     result = addToArray(result, ticket); // добавляем его в массив ответа
-                    Arrays.sort(result, timeComparator); // сортируем массив по увеличению времени полета
+
                 }
             }
         }
+        Arrays.sort(result, timeComparator); // сортируем массив по увеличению времени полета
         return result;
     }
 }
